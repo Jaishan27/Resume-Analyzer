@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Analyser</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Upload Your Resume</h1>
+
+      <form id="job-form">
+        <label for="job-title">Job Title:</label>
+        <input
+          type="text"
+          id="job-title"
+          name="job_title"
+          class="job-title"
+          placeholder="Enter Job Title"
+          required
+        />
+      </form>
+
+      <div id="drop-area" class="drop-area">
+        <p>Drag & Drop a PDF or DOCX file here</p>
+        <input type="file" id="fileInput" class="file-input" hidden />
+        <button id="uploadBtn" class="upload-btn">Select File</button>
+      </div>
+
+      <div id="loading" class="loading" style="display: none">
+        <span class="dot">.</span>
+        <span class="dot">.</span>
+        <span class="dot">.</span>
+      </div>
+      <pre id="output" class="output" style="display: none"></pre>
+    </div>
+    <div class="reset-button-container">
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
