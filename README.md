@@ -1,4 +1,4 @@
-# Resume Analyzer
+# Resume Analyser
 
 ## Description
 
@@ -40,7 +40,7 @@ The **OpenAI GPT-4** model is used to fetch job skills based on the job title en
 
 1. **Clone the Repository**:  
    First, clone the repository to your local machine by running the following command:
-   - git clone https://github.com/JaishanJ/Resume-Analyzer.git
+   - git clone https://github.com/JaishanJ/Resume-Analyser.git
    - cd Resume-Analyzer
 
 2. **Install Dependencies**:  
